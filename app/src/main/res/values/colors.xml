@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#F5F4F2</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="border">#E2E0DB</color>
+    <color name="fg">#1A1917</color>
+    <color name="muted">#7A7870</color>
+    <color name="accent">#2D5BE3</color>
+    <color name="accent_pressed">#1E45C4</color>
+    <color name="result">#2D5BE3</color>
+    <color name="history_bg">#F0EEEC</color>
+    <color name="badge">#E8ECFB</color>
+    <color name="badge_fg">#2D5BE3</color>
+    <color name="error">#D94A4A</color>
+    <color name="on_accent">#FFFFFF</color>
+    <color name="icon_bg">#2D5BE3</color>
+</resources>

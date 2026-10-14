@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zufallszahl</string>
+    <string name="chip_generator">Generator</string>
+    <string name="title">Zufallszahl</string>
+    <string name="label_from">Von</string>
+    <string name="label_to">Bis</string>
+    <string name="generate">Generieren</string>
+    <string name="history">Verlauf</string>
+    <string name="clear">Löschen</string>
+    <string name="history_empty">Noch keine Zahlen generiert.</string>
+    <string name="err_invalid">Bitte gültige Zahlen eingeben.</string>
+    <string name="err_order">„Von“ muss kleiner sein als „Bis“.</string>
+    <string name="placeholder">—</string>
+    <string name="range_format">%1$d – %2$d</string>
+</resources>
