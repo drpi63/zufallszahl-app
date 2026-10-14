@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Quellcode auschecken
@@ -32,3 +34,17 @@ jobs:
           name: zufallszahl-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
+      - name: APK ins Repository übernehmen
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/debug/app-debug.apk dist/zufallszahl.apk
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f dist/zufallszahl.apk
+          if git diff --cached --quiet; then
+            echo "APK unverändert – kein Commit nötig."
+          else
+            git commit -m "Build: zufallszahl.apk aktualisiert [skip ci]"
+            git push
+          fi
